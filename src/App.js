@@ -44,6 +44,29 @@ function App() {
     padding: '10px', // Adjust padding as needed
     boxSizing: 'border-box',
   }
+  const phoneNumber = {
+    marginTop:"5px",
+    width : "450px",
+    height: "30px",
+    boxShadow:
+      "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+    borderRadius: '14px', // Rounded corners
+    border: 'none', // No border
+    padding: '10px', // Adjust padding as needed
+    boxSizing: 'border-box',
+  }
+  const button = {
+    marginTop:"20px",
+    width : "250px",
+    height: "30px",
+    background:"red",
+    boxShadow:
+      "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+    borderRadius: '14px', // Rounded corners
+    border: 'none', // No border
+    padding: '10px', // Adjust padding as needed
+    boxSizing: 'border-box',
+  }
 
   useEffect(() => {
     async function fetchWeather() {
@@ -71,8 +94,8 @@ function App() {
           Please Enter the Location and Phone number
         </div>
         <div><input name="location" style={location} ></input></div>
-        <div><input name="phoneNumber" style={location} ></input></div>
-        <div>Button</div>
+        <div><input name="phoneNumber" style={phoneNumber} ></input></div>
+        <div><button style={button}>Click here</button></div>
       </div>
 
       {/* {data ? (
